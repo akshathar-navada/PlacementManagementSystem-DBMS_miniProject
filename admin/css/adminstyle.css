@@ -1,0 +1,294 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+    background: #1B1D1C;
+}
+
+ /* ---------------------------------------
+       PRE LOADER              
+  -----------------------------------------*/
+
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+  }
+
+  .spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    border-top-color: #ffffff;
+    animation: spinner .9s linear infinite;
+  }
+
+  /* @-webkit-@keyframes spinner {
+    to {transform: rotate(360deg);}
+  } */
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+header
+{
+	width: 100%;
+	float: left;
+	height: 80px;
+	background-color: white;
+    position: static;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1); 
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin: 30px 0px 0px 0px;
+	font-weight: bolder;
+}
+
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px 5px 20px;
+	font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    opacity: 0.5;
+    transition: .4s ease-in-out;
+}
+
+
+.main-nav li a:hover
+{
+    color: black;
+    background: white;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.logo img
+{
+
+	width: 200px;
+	height: 45px;
+	float: left;
+    margin: 15px 0px 0px 25px;
+}
+
+.title
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-size: 45px;
+    margin-top: 5px;
+    font-family: Lobster;
+
+}
+
+
+/*----- Left side bar ------ */
+
+#sidebar-wrapper {
+  
+    width: 16.5%;
+    height: 100%;
+    background: #1B1D1C;
+    float: left;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    width: 250px;
+    margin: 0;
+    padding-top: 20px;
+    list-style: none;
+   
+}
+
+.sidebar-nav .active {
+    background: rgba(255, 255, 255, 0.1);
+   
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    transition: 0.6s ease-in-out;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    padding-left: 40px;
+    transition: 0.6s ease-in-out;
+}
+
+/* ------- Job post div tag -------*/
+
+.mainpage
+{
+  width: 83.5%;
+ height: 100%;
+  float: left;
+  background: url("../../images/login.jpg");
+  background-size: cover;
+  
+}
+
+.mainpage form
+{
+    margin: 20px 0px 0px 0px;
+}
+.mainpage .createjobset
+{
+    margin: 130px 50px 120px 50px;
+}
+
+
+/* ------- Job Post -------*/
+
+.hd_title
+{
+    text-align: center;
+    font-size: 32px;
+    top: 80px;
+    margin: 50px 0px 0px 35%;
+    position: absolute;
+}
+
+.btn-primary {
+    background-color: rgb(22, 135, 240) !important;
+    border-color: #000000 !important;
+  }
+  
+  .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .flex-row > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .flex-row .thumbnail,
+  .flex-row .caption {
+      flex-direction: column;
+      display: flex;
+      flex: 1 0 auto;
+      height: auto;
+      position: relative;
+  }
+  .flex-text {
+      flex-grow: 1;
+  }
+  .flex-row img {
+      min-width: 0;
+      width: 100%;
+  }
+  
+  .container {
+      width: 1020px !important;
+      margin-top: 0px;
+
+  }
+  .container .adminset {
+    margin-top: 130px;
+
+}
+
+   /* ----------------
+        Search Job
+  -------------------*/
+
+.row .col-md-6
+{
+    width: 50%;
+}
+
+.search-area
+{
+   width: 50%;
+   margin-left: 270px;
+}
+
+.row .col-md-6 button
+{
+   margin-top: 22px;
+}
+
+ /* ----------------
+  Applied job
+  -------------------*/
+  .attachment-block
+  {
+      border: 0.5px solid black;
+      border-radius: 10px; 
+      box-shadow: 50px;
+      padding: 10px;
+  }
+  
+  .attachment-heading-head  {
+      color: rgba(240, 55, 22, 0.822)  !important;
+  }
+  .attachment-heading a{
+      color: rgba(0, 132, 255, 0.822)  !important;
+  }
+  
+  .mainpage .main
+  {
+      margin: 120px 0px 0px 50px;
+  
+  }
+
+  .mainpage .row .adminsearchjob
+  {
+      margin: 0 0 0 120px;
+  }
